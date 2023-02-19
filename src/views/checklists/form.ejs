@@ -1,0 +1,13 @@
+<form method="post" action="<%= url %>">
+  <div class="field">
+    <label class="label">Nome</label>
+    <div class="control">
+      <input class="input" type="text" name="checklist[name]" placeholder="Lista de Tarefas" value="<%= checklist.name %>" autofocus>
+      <% if(checklist.error && checklist.error.hasOwnProperty('name')) { %>
+        <p class="is-danger help"> <%= checklist.error.name.message %> </p> <!-- O mongoose injeta o erro no campo onde iria injetar a informação -->
+      <% } %>
+    </div>
+  </div>
+  <button type="submit" class="button is-success">Salvar</button>
+  <a href="/checklists" class="button">Cancelar</a>
+</form>

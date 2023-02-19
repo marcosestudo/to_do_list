@@ -1,0 +1,27 @@
+<%- include ('../layouts/header', {"title": "Nova tarefa" }) %>
+
+<%- include ('../layouts/menu') %>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title size-4">Nova Tarefa</h1>
+    
+    <form method="post" action="checklists/<%= checklistId %>/tasks">
+      <div class="field">
+        <label class="label">Nome</label>
+        <div class="control">
+          <input class="input" type="text" name="task[name]" placeholder="Lista de Tarefas" value="<%= task.name %>" autofocus>
+          <% if(task.error && checklist.error.hasOwnProperty('name')) { %>
+            <p class="is-danger help">
+              <%= task.error.name.message %>
+            </p> <!-- O mongoose injeta o erro no campo onde iria injetar a informação -->
+            <% } %>
+        </div>
+      </div>
+      <button class="button is-success" type="post">Salvar</button>
+      <a href="/checklists/<%= checklistId %>" class="button">Cancelar</a>
+    </form>
+  </div>
+</section>
+
+<%- include ('../layouts/footer') %>

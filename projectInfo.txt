@@ -1,0 +1,25 @@
+Iniciar o package.json
+>>> npm init -y
+
+Intalar todos os pacotes da dependencies
+>>> npm install
+
+Dependências deste projeto:
+
+Express
+>>> npm install express --save
+
+Nodemon é um servidor de desenvolvimento que monitora os nosso arquivos reiniciando o servidor sempre que tiver alteração
+Podemos rodar o servidor sem o nodemon abrindo diretamente o app.js
+>>> npm install nodemon --save-dev
+>>> npx nodemon | para iniciar o servidor com o nodemon
+
+Nongoose
+Mongoose fica entre o node e o banco de dados, ele conecta o node com express ao mongo
+Buscar: o mongoose precida do express?
+>>> npm install mongoose --save
+Configurando o mongoose, não esqueça de configurar a mongoose.Promise
+Criamos manualmente a pasta chamada config e criamos o arquivo database.js para as configurações do banco de dados
+
+EJS
+>>> npm install ejs --save
