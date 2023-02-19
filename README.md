@@ -1,4 +1,4 @@
-<h2> Evernote clone em React</h2>
+<h2>To-do list</h2>
 
 Para instalar as dependências e rodar o projeto, deve ter instalado o [Node](https://nodejs.org/en/) e o [MongoDB](https://www.mongodb.com/)
 
@@ -14,16 +14,24 @@ Para instalar as dependências e rodar o projeto, deve ter instalado o [Node](ht
 <hr>
 
 <h3>Iniciando:</h3>
-  <p>Em um terminal, na pasta to_do_list, independentemente do sistema, use o comando:</p>
+  <p>No terminal, na pasta to_do_list, independentemente do sistema, use o comando:</p>
 
   ```
   npm start
   ```
+  
   <p>Deve aparecer a mensagem: Conectado ao MongoDB </p>
-  <p>No Linux, se não aparecer a mensagem, será necessário iniciar o MongoDB antes de startar, para isso, use o comando:</p>
+  <p>No Linux, se não aparecer a mensagem, será necessário iniciar o MongoDB antes de startar</p>
+  <p>para isso, encerre com o atalho ctrl+c e use o comando:</p>
   
   ```
   sudo service mongod start
+  ```
+
+  <p>Em seguida, inicie com o comando:</p>
+
+  ```
+  npm start
   ```
 
 <hr>
