@@ -1,48 +1,49 @@
-<h2>To-do list</h2>
+# To-do list com MongoDB
+
+> Projeto de lista de tarefas criado para praticar mongoDB, html, css e javascript 
 
 Para instalar as dependências e rodar o projeto, deve ter instalado o [Node](https://nodejs.org/en/) e o [MongoDB](https://www.mongodb.com/)
 
-<hr>
+## Usando o terminal, siga os passos...
+## 1. Clonando o projeto 
 
-<h3>Instalando dependencias:</h3>
-  <p>Na pasta to_do_list use o comando no terminal, independentemente do sistema:</p>
+```
+git clone https://github.com/marcosestudo/to_do_list.git
+```
 
-  ```
-  npm install
-  ```
+## 2. Instalando as dependências
 
-<hr>
+Vá para a pasta
 
-<h3>Iniciando:</h3>
-  <p>No terminal, na pasta to_do_list, independentemente do sistema, use o comando:</p>
+```
+cd to_do_list
+```
 
-  ```
-  npm start
-  ```
-  
-  <p>Deve aparecer a mensagem: Conectado ao MongoDB </p>
-  <p>No Linux, se não aparecer a mensagem, será necessário iniciar o MongoDB antes de startar</p>
-  <p>para isso, encerre com o atalho ctrl+c e use o comando:</p>
-  
-  ```
-  sudo service mongod start
-  ```
+Instale as dependências
 
-  <p>Em seguida, inicie com o comando:</p>
+```
+npm install
+```
 
-  ```
-  npm start
-  ```
+## Iniciando
 
-<hr>
-  
-- Visualize o app rodando no navegador em [localhost:3000](http://localhost:3000/)
+No Linux, antes de iniciar a API, será necessário iniciar o Mongo com o seguinte comando, no Windows não será necessário
 
-<hr>
+```
+sudo service mongod start
+```
+
+Inicie a API
+
+```
+npm start
+```
+
+## Visualize o app rodando no navegador em [localhost:3000](http://localhost:3000/)
 
 ### 🛠 Tecnologias
 
-<p>As seguintes ferramentas foram usadas na construção do projeto:</p>
+As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [EJS](https://ejs.co/)
